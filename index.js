@@ -1,5 +1,4 @@
 const cracklePop = () => {
-    let result = [];
     for (let i=1; i<=100; i++) {
         let toPrint = '';
         if (i % 3 === 0) {
@@ -7,16 +6,14 @@ const cracklePop = () => {
         }
     
         if (i % 5 === 0) {
-            toPrint += 'Pop'
+            toPrint += 'Pop';
         }
     
         if (!toPrint) {
-            toPrint = '' + i;
+            toPrint += i;
         }
-
-        result.push(toPrint);
+        console.log(toPrint);
     }
-    return result;
 }
 
-console.log(cracklePop());
+cracklePop();
